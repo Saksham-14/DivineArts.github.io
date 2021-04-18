@@ -1236,8 +1236,15 @@ body, html {
     height: 29.375rem;
 }
 
+iframe {
+    width: 100%;
+	}
+
 @media (max-width:991.98px) {
     #map {
         height: 28.125rem;
     }
+	iframe {
+		width: 940px;
+	}
 }
