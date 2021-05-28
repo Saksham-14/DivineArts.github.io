@@ -1,12 +1,12 @@
-﻿function on() {
+function on() {
     document.getElementById("overlay").style.display = "block";
     document.getElementById("overlay").style.opacity = 0.5;
-    //$("#main").hide();
+    $("#main").hide();
 }
 
 function off() {
     document.getElementById("overlay").style.display = "none";
-    //$("#main").show();
+	$("#main").show();
 }
 
 function firston() {
@@ -19,7 +19,7 @@ function firston() {
 }
 
 function openMap() {
-    window.open('https://www.google.com/maps/place/Divine+arts+work/@26.2633454,72.9882253,17z/data=!3m1!4b1!4m5!3m4!1s0x39418f24d22d3c05:0xeafb91b86ad51bc0!8m2!3d26.2633406!4d72.990414');
+    window.open("https://www.google.com/maps/place/26%C2%B014'04.7%22N+72%C2%B058'59.3%22E/@26.2346268,72.9809351,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d26.2346268!4d72.9831238?hl=en");
 }
 
 
@@ -34,4 +34,5 @@ $(document).ready(function () {
     + '</div>'
 
     $("#overlay").html(html);
+	
 });
