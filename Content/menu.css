@@ -1,4 +1,4 @@
-﻿#overlay, #Home_overlay {
+#overlay, #Home_overlay {
     position: fixed;
     display: none;
     width: 100%;
@@ -11,6 +11,20 @@
     z-index: 2;
     cursor: pointer;
     font-size: 40px;
+}
+
+.img-size{
+	width: 200px; 
+	height: 200px;
+}
+
+#Home_overlay
+{
+	background-color: #7B7D7D;
+	/* opacity:1;  */
+	text-align: center; 
+	cursor: default;
+	opacity: 1;
 }
 
     #Home_overlay div h1 {
@@ -38,12 +52,111 @@
     margin-top: 0px;
     width: 100px;
     height: 100px;
+	cursor: pointer;
 }
 
 .aboutus_content {
     text-align: center;
     font-size: 25px;
     font-family: 'Roboto', serif;
+}
+
+.sub-header{
+	font-family: 'Roboto', serif; 
+	text-align: center; 
+	font-size: 30px;
+}
+
+
+.container-size{
+	margin-top: 75px;
+}
+
+.overlay-logo{
+	margin-top: 200px;
+	opacity: 1;
+	width: 200px;
+	height: 200px;
+}
+
+@media only screen and (max-width: 980px) {
+	.aboutus_content {
+		text-align: center;
+		font-size: 70px;
+		font-family: 'Roboto', serif;
+	}
+	
+	.sub-header{
+	font-family: 'Roboto', serif; 
+	text-align: center; 
+	font-size: 75px;
+	margin-top: 5%;
+	}
+	
+	.download_title {
+    margin-left: 95px;
+    margin-top: -50px;
+    margin-bottom: 25px;
+    font-size: 100px;
+	}
+	
+	#menu-toggle{
+	font-size: 65px;
+	}
+	
+	#logo {
+    width: 200px;
+    height: 200px;
+	}
+	
+	.menu-font{
+	font-size: 100px;
+    margin-top: 100px;
+	}
+	
+	.contacts_content_left {
+    font-family: 'Roboto',serif;
+    font-size: 60px;
+	}
+
+	.overlay-logo{
+	margin-top: 60%;
+    opacity: 1;
+	width: 500px;
+	height: 500px;
+	margin-left: 25%;
+	}
+	
+	.contacts_button {
+    font-family: 'Roboto',serif;
+	}
+	
+	.icon-size{
+		font-size: 58px;
+	}
+	
+	.contacts_label i{
+		font-size: 100px;
+	}
+}
+
+.contacts_label{
+	color: #fff;
+}
+
+.contacts_label i{
+	font-size: 60px;
+}
+
+
+@media only screen and (max-width: 570px) {
+	.contacts_button, .contacts_label{
+		font-size: 35px;
+	}
+	
+	.follow_text {
+    font-size: 40px;
+	}
 }
 
 .btn-primary {
