@@ -15,7 +15,7 @@ function firston() {
         $("#main").show();
         $("#Home_overlay").hide();
     }, 7000);
-    //$("#main").hide();
+    $("#main").hide();
 	$("#Home_overlay").show();
 	$(".carousel-indicators").hide();
 }
