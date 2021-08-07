@@ -88,6 +88,14 @@
 	height: 200px;
 }
 
+@media only screen and (orientation :landscape)
+{
+	.menu-font{
+	font-size: 40px !important; 
+    margin-top: 0% !important;
+	}
+}
+
 @media only screen and (max-width: 980px) {
 	.aboutus_content {
 		text-align: center;
