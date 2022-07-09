@@ -22,10 +22,8 @@ function openMap() {
     window.open("https://www.google.com/maps/place/26%C2%B014'04.7%22N+72%C2%B058'59.3%22E/@26.2346268,72.9809351,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d26.2346268!4d72.9831238?hl=en");
 }
 
-
-
 $(document).ready(function () {
-    var html = '<div class="container"  style="margin-top: 75px;">'
+    var html = '<div class="container menu">'
     + '<ul class="nav nav-pills nav-stacked">'
     + '<li><a href="Index.html">Home</a></li>'
     + '<li><a href="AboutUs.html">About Us</a></li>'
@@ -36,8 +34,6 @@ $(document).ready(function () {
 
     $("#overlay").html(html);
 	
-
-
     $("#overlay").click(function(){
         off();
     });
@@ -46,4 +42,7 @@ $(document).ready(function () {
         on();
     });
 
+    $("#logo").click(function(){
+        location.reload();
+    });
 });
