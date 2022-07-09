@@ -27,6 +27,15 @@
     font-size: 40px;
 }
 
+#Home_overlay{
+    background-color: #7B7D7D;opacity:0.5; text-align: center; cursor: default; background: url(../Images/Img/bg-img01.jpeg) left top no-repeat, url(../Images/Img/bg-img02.jpeg) right top no-repeat,url(../Images/Img/bg-img03.jpeg) left bottom no-repeat, url(../Images/Img/bg-img04.jpeg) right bottom no-repeat;
+    background-size: 50% 50%,50% 50%,50% 50%,50% 50%;
+}
+
+#Home_overlay div{
+    margin-top: 200px;
+    opacity:1;
+}
     #Home_overlay div h1 {
         color: black;
         text-align: center;
