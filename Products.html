@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Divine Arts</title>
     <!-- add icon link -->
     <link rel="icon" href="Images/Logo/ch-12.jpg" type="image/x-icon" />
     <link href="Content/Divine.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link href="Content/Divine.css" rel="stylesheet" />
+    <link rel="stylesheet" href="Content/bootstrap-icons.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+    <link href="Content/menu.css" rel="stylesheet" />
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <script src="Scripts/JS/jquery.min.js"></script>
     <script src="Scripts/JS/bootstrap.min.js"></script>
@@ -21,47 +23,48 @@
         }
     </style>
 </head>
-<body style="background-color: #7B7D7D; color: #fff;">
-    <div id="overlay" onclick="off()" style="background: url(Images/Img/bg-img01.jpeg) left top no-repeat, url(Images/Img/bg-img04.jpeg) right top no-repeat,url(Images/Img/bg-img03.jpeg) left bottom no-repeat, url(Images/Img/bg-img02.jpeg) right bottom no-repeat;background-size: 50% 50%,50% 50%,50% 50%,50% 50%;"></div>
-<div id="main">
-    <nav>
-        <div>
-            <img src="Images/Logo/ch-12.jpg" alt="Divine Arts" id="logo" />
-            <button class="btn btn-primary" id="menu-toggle" onclick="on();">☰</button>
-            <h1 class="download_title">Products</h1>
-        </div>
-    </nav>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 text-center">
-                <img src="Images/Products/2e337e842a2ea4b6c4eb20e82e5fa7a6.jpg" alt="Divine Arts" />
-                <img src="Images/Products/3eb1bffd04027eaa34323a79c8e1fca6.jpg" alt="Divine Arts" />
-                <img src="Images/Products/4090c95e6bc847c97a5f117681ce2bb4.jpg" alt="Divine Arts" />
-                <img src="Images/Products/42bc9103da743f29adc793c5d2fb14c9.jpg" alt="Divine Arts" />
-                <img src="Images/Products/62978282c16af69ef9bf8fb09ef42010.jpg" alt="Divine Arts" />
-                <img src="Images/Products/f1a585e7cefe106b5d7243ebad0488ea.jpg" alt="Divine Arts" />
-                <img src="Images/Products/11fa3ea388a458beea9926b658b768f4.jpg" alt="Divine Arts" />
-                <img src="Images/Products/1bd92b443ed217b54c7f3b10fa22441a.jpg" alt="Divine Arts" />
-                <img src="Images/Products/7b0109867696e5af724d57567ddcdaa9.jpg" alt="Divine Arts" />
-                <img src="Images/Img/DA-img1.jpeg" alt="Divine Arts"/>
-                <img src="Images/Img/DA-img2.jpeg" alt="Divine Arts"/>
+
+<body>
+    <div id="overlay"></div>
+    <div id="main">
+        <nav>
+            <div>
+                <img src="Images/Logo/ch-12.jpg" alt="Divine Arts" id="logo" />
+                <a class="btn btn-primary" id="menuToggle">☰</a>
+                <h1 class="download_title">Products</h1>
             </div>
-            <div class="col-md-6 text-center">
-                <img src="Images/Products/74ee7e6b36eeee3d89d4245c4cc91e05.jpg" alt="Divine Arts" />
-                <img src="Images/Products/8fc5136a50a6ef22864e8eb13d57b25d.jpg" alt="Divine Arts" />
-                <img src="Images/Products/9d5f77e32794ed2fb07e19b443f2a16f.jpg" alt="Divine Arts" />
-                <img src="Images/Products/c77f48c27b753444a1426272e650ad4c.jpg" alt="Divine Arts" />
-                <img src="Images/Products/dec3d2dc0f8b52dbcd013bb573d2d0a2.jpg" alt="Divine Arts" />
-                <img src="Images/Products/e3be29e0bab434f0044dbc712a9ef4c2.jpg" alt="Divine Arts" />
-                <img src="Images/Products/e3f21a5ae9f969f284c8a1146d998c97.jpg" alt="Divine Arts" />
-                <img src="Images/Products/659bae0778ee0a41e1caf619582808fe.jpg" alt="Divine Arts" />
-                <img src="Images/Products/6830fac4b8c73acc1912543fbe7a3806.jpg" alt="Divine Arts" />
-                <img src="Images/Products/ea31d830b0cd3aed6af3dce081674e2d.jpg" alt="Divine Arts" />
-                <img src="Images/Img/DA-img3.jpeg" alt="Divine Arts"/>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <img src="Images/Products/2e337e842a2ea4b6c4eb20e82e5fa7a6.jpg" alt="Divine Arts" />
+                    <img src="Images/Products/3eb1bffd04027eaa34323a79c8e1fca6.jpg" alt="Divine Arts" />
+                    <img src="Images/Products/4090c95e6bc847c97a5f117681ce2bb4.jpg" alt="Divine Arts" />
+                    <img src="Images/Products/42bc9103da743f29adc793c5d2fb14c9.jpg" alt="Divine Arts" />
+                    <img src="Images/Products/62978282c16af69ef9bf8fb09ef42010.jpg" alt="Divine Arts" />
+                    <img src="Images/Products/f1a585e7cefe106b5d7243ebad0488ea.jpg" alt="Divine Arts" />
+                    <img src="Images/Products/11fa3ea388a458beea9926b658b768f4.jpg" alt="Divine Arts" />
+                    <img src="Images/Products/1bd92b443ed217b54c7f3b10fa22441a.jpg" alt="Divine Arts" />
+                    <img src="Images/Products/7b0109867696e5af724d57567ddcdaa9.jpg" alt="Divine Arts" />
+                    <img src="Images/Img/DA-img1.jpeg" alt="Divine Arts" />
+                    <img src="Images/Img/DA-img2.jpeg" alt="Divine Arts" />
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="Images/Products/74ee7e6b36eeee3d89d4245c4cc91e05.jpg" alt="Divine Arts" />
+                    <img src="Images/Products/8fc5136a50a6ef22864e8eb13d57b25d.jpg" alt="Divine Arts" />
+                    <img src="Images/Products/9d5f77e32794ed2fb07e19b443f2a16f.jpg" alt="Divine Arts" />
+                    <img src="Images/Products/c77f48c27b753444a1426272e650ad4c.jpg" alt="Divine Arts" />
+                    <img src="Images/Products/dec3d2dc0f8b52dbcd013bb573d2d0a2.jpg" alt="Divine Arts" />
+                    <img src="Images/Products/e3be29e0bab434f0044dbc712a9ef4c2.jpg" alt="Divine Arts" />
+                    <img src="Images/Products/e3f21a5ae9f969f284c8a1146d998c97.jpg" alt="Divine Arts" />
+                    <img src="Images/Products/659bae0778ee0a41e1caf619582808fe.jpg" alt="Divine Arts" />
+                    <img src="Images/Products/6830fac4b8c73acc1912543fbe7a3806.jpg" alt="Divine Arts" />
+                    <img src="Images/Products/ea31d830b0cd3aed6af3dce081674e2d.jpg" alt="Divine Arts" />
+                    <img src="Images/Img/DA-img3.jpeg" alt="Divine Arts" />
+                </div>
             </div>
         </div>
     </div>
-	</div>
 </body>
-</html>
 
+</html>

@@ -1,84 +1,89 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Divine Arts</title>
     <link rel="icon" href="Images/Logo/ch-12.jpg" type="image/x-icon" />
     <link href="Content/Divine.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/menu.css" rel="stylesheet" />
     <script src="Scripts/JS/jquery.min.js"></script>
     <script src="Scripts/JS/bootstrap.min.js"></script>
-    <link href="Content/menu.css" rel="stylesheet" />
     <script src="Scripts/JS/Divine.js"></script>
 </head>
-<body style="background-color: #7B7D7D; color: #fff;">
-    <div id="overlay" onclick="off()" style="background: url(Images/Img/bg-img04.jpeg) left top no-repeat, url(Images/Img/bg-img03.jpeg) right top no-repeat,url(Images/Img/bg-img02.jpeg) left bottom no-repeat, url(Images/Img/bg-img01.jpeg) right bottom no-repeat;background-size: 50% 50%,50% 50%,50% 50%,50% 50%;"></div>
-	<div id="main">
-    <nav>
-        <div>
-            <img src="Images/Logo/ch-12.jpg" alt="Divine Arts" id="logo" />
-            <button class="btn btn-primary" id="menu-toggle" onclick="on();">☰</button>
-            <h1 class="download_title">Contact Us</h1>
-        </div>
-    </nav>
-    <div class="contacts_content">
-        <div class="contacts_content_left">
-            <div class="contacts_address">
-                Plot No. 109-110,<br />
-                <br /><p></p>
-                Amrit Vihar - II,<br />
-                <br /><p></p>
-                Pal Road,<br />
-                <br /><p></p>
-                Jodhpur (Rajasthan)
+
+<body>
+    <div id="overlay"></div>
+    <div id="main">
+        <nav>
+            <div>
+                <img src="Images/Logo/ch-12.jpg" alt="Divine Arts" id="logo" />
+                <a class="btn btn-primary" id="menuToggle">☰</a>
+                <h1 class="download_title">Contact Us</h1>
             </div>
-            <br />
-            <a class="contacts_button" onclick="openMap();" target="_blank">Office Info</a>
-            <br />
-            <br />
-			<div class="icon-size">
-            <i class="bi bi-telephone"></i>
-			</div>
-            <br />
-            <a class="contacts_label" style="margin-top: 10px;" href="tel:+91 9820800854">+91 9820800854</a><br />
-            <a class="contacts_label" style="margin-top: 10px;" href="tel:+91 9468555577">+91 9468555577</a><br />
-            <div class="icon-size">
-			<i class="bi bi-envelope"></i>
-			</div>
-            <br />
-            <a class="contacts_label" style="margin-top: 10px;" href="mailto: info@divinearts.co.in">info@divinearts.co.in</a>
-        </div>
-        <div class="contacts_content_right">
-            <div class="contacts_socialContainer_title">
-                <div class="follow_text">
-                    Follow us on
-                <br />
-                    our social networks
-                <br />
+        </nav>
+        <div class="contacts_content">
+            <div class="contacts_content_left">
+                <div class="contacts_address">
+                    Plot No. 109-110,<br />
                     <br />
+                    Amrit Vihar - II,<br />
+                    <br />
+                    Pal Road,
+                    <br />
+                    <br />
+                    Jodhpur (Rajasthan)
                 </div>
-                <div>
-                    <a href="https://www.facebook.com/Divine-arts-work-105990331420427/" class="contacts_label" target="_blank">
-                        <i class="bi bi-facebook"></i>
-                    </a>
-                    <br />
-                    <br />
-                    <a href="https://www.instagram.com/divinearts.work/" class="contacts_label" target="_blank">
-                        <i class="bi bi-instagram"></i>
-                    </a>
+                <br />
+                <a class="contacts_button" onclick="openMap();" target="_blank">Office Info</a>
+                <br />
+                <br />
+                <i class="bi bi-telephone"></i>
+                <br />
+                <a class="contacts_label" style="margin-top: 10px;" href="tel:+91 9820800854">+91 9820800854</a><br />
+                <a class="contacts_label" style="margin-top: 10px;" href="tel:+91 9468555577">+91 9468555577</a><br />
+                <i class="bi bi-envelope"></i>
+                <br />
+                <a class="contacts_label" style="margin-top: 10px;"
+                    href="mailto: info@divinearts.co.in">info@divinearts.co.in</a>
+            </div>
+            <div class="contacts_content_right">
+                <div class="contacts_socialContainer_title">
+                    <div class="follow_text">
+                        Follow us on
+                        <br />
+                        our social networks
+                        <br />
+                        <br />
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/Divine-arts-work-105990331420427/" class="contacts_label"
+                            style="color: #fff;" target="_blank">
+                            <i class="bi bi-facebook" style="font-size: 60px;"></i>
+                        </a>
+                        <br />
+                        <br />
+                        <a href="https://www.instagram.com/divinearts.work/" class="contacts_label" style="color: #fff;"
+                            target="_blank">
+                            <i class="bi bi-instagram" style="font-size: 60px;"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-12" style="margin-top: 30px;">
-            <div class="vc_row wpb_row vc_row-fluid eltdf-row-type-row" style="">
-                <div class="wpb_column vc_column_container vc_col-sm-12">
-                    <div class="vc_column-inner">
-                        <div class="wpb_wrapper">
+            <div class="col-md-12" style="margin-top: 30px;">
+                <div class="vc_row wpb_row vc_row-fluid eltdf-row-type-row">
+                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                        <div class="vc_column-inner">
                             <div class="wpb_wrapper">
-                                <div class="wpb_map_wraper">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.832645748127!2d72.98093511503072!3d26.234626783424325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDE0JzA0LjciTiA3MsKwNTgnNTkuMyJF!5e0!3m2!1sen!2sin!4v1622216003464!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                <div class="wpb_wrapper">
+                                    <div class="wpb_map_wraper">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.832645748127!2d72.98093511503072!3d26.234626783424325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDE0JzA0LjciTiA3MsKwNTgnNTkuMyJF!5e0!3m2!1sen!2sin!4v1622216003464!5m2!1sen!2sin"
+                                            width="600" height="450" style="border:0;" allowfullscreen=""
+                                            loading="lazy"></iframe>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -86,6 +91,6 @@
                 </div>
             </div>
         </div>
-		</div>
 </body>
+
 </html>
