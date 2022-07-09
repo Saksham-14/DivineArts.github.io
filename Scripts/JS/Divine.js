@@ -1,23 +1,21 @@
-function on() {
+﻿function on() {
     document.getElementById("overlay").style.display = "block";
     document.getElementById("overlay").style.opacity = 0.5;
     $("#main").hide();
-	$(".carousel-indicators").show();
 }
 
 function off() {
-	$("#overlay").hide();
+    document.getElementById("overlay").style.display = "none";
 	$("#main").show();
 }
 
 function firston() {
     setTimeout(function () {
-        $("#main").show();
-        $("#Home_overlay").hide();
+        //$("#main").show();
+        document.getElementById("Home_overlay").style.display = "none";
     }, 7000);
-    $("#main").hide();
-	$("#Home_overlay").show();
-	$(".carousel-indicators").hide();
+    //$("#main").hide();
+    document.getElementById("Home_overlay").style.display = "block";
 }
 
 function openMap() {
@@ -25,9 +23,10 @@ function openMap() {
 }
 
 
+
 $(document).ready(function () {
-    var html = '<div class="container container-size">'
-    + '<ul class="nav nav-pills nav-stacked menu-font">'
+    var html = '<div class="container"  style="margin-top: 75px;">'
+    + '<ul class="nav nav-pills nav-stacked">'
     + '<li><a href="Index.html">Home</a></li>'
     + '<li><a href="AboutUs.html">About Us</a></li>'
     + '<li><a href="Products.html">Products</a></li>'
@@ -37,7 +36,14 @@ $(document).ready(function () {
 
     $("#overlay").html(html);
 	
-	$("#logo").click(function() {
-	location.reload();
-	});
+
+
+    $("#overlay").click(function(){
+        off();
+    });
+    
+    $("#menuToggle").click(function(){
+        on();
+    });
+
 });
